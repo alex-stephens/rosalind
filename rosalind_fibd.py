@@ -1,5 +1,4 @@
 def count_pairs(n, m):
-
     # dp[n] is the number of new rabbits born in month n
     dp = [0] * (n + 1)
     dp[1] = 1

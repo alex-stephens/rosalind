@@ -14,9 +14,7 @@ def main():
     cur_id = None
 
     with open(filename) as f:
-
         while True:
-
             line = f.readline().strip()
             if not line:
                 break

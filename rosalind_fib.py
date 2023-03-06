@@ -1,5 +1,4 @@
 def count_pairs(n, k):
-
     dp = [0] * (n + 1)
     dp[1] = 1
 

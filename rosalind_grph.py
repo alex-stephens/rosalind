@@ -6,7 +6,6 @@ def overlap(s1, s2, k):
 
 
 def build_adj_list(strings, k):
-
     adj = []
 
     for x in strings:
