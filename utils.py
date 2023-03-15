@@ -1,6 +1,12 @@
-def parse_fasta(filename):
+from collections import OrderedDict
+
+
+def parse_fasta(filename, ordered=False):
     """Parses a FASTA file and returns a dictionary of the form {id: sequence}."""
-    strings = dict()
+    if ordered:
+        strings = OrderedDict()
+    else:
+        strings = {}
     cur_id = None
 
     with open(filename) as f:
